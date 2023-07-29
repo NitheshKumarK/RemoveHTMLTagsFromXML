@@ -1,8 +1,3 @@
-@import "./styles/components/_settings";
-@import "./styles/components/container";
-@import "./styles/components/options";
-@import "./styles/components/header";
-@import "./styles/components/addoptions";
 .App {
   text-align: center;
 }
@@ -40,29 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-body {
-  background-color: rgb(20, 20, 20);
-}
-
-.pickOneButton {
-  color: $white;
-  background-color: $dark-purple;
-  width: 100%;
-  height: 80px;
-  margin-top: 16px;
-  border-radius: 4px;
-  font-size: 2rem;
-  font-weight: bolder;
-}
-
-.pickOneButton:disabled {
-  opacity: 0.5;
-}
-
-button {
-  cursor: pointer;
-}
-button:disabled {
-  cursor: default;
 }
