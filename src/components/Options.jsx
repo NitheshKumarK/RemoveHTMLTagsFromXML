@@ -1,6 +1,7 @@
 import React from "react";
 
 class Options extends React.Component {
+ 
   render() {
     return (
       <>
@@ -8,7 +9,7 @@ class Options extends React.Component {
           <ul>
             {this.props.options.map((it, index) => (
               <>
-                <li key={index}>{it}</li>
+                <li onClick={()=>{this.removeItem(it)}}key={index}>{it}</li>
                 <br />
               </>
             ))}
@@ -17,6 +18,11 @@ class Options extends React.Component {
       </>
     );
   }
+  removeItem = (item)=>{
+    this.props.removeItem(item)
+  }
 }
+
+
 
 export default Options;

@@ -43,6 +43,7 @@ class App extends React.Component {
           <Options
             options={this.state.options}
             deleteOption={this.deleteOption}
+            removeItem = {this.removeItem}
           />
           <AddOption
             addOptionItem={this.addOptionItem}

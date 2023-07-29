@@ -7,8 +7,9 @@ class AddOption extends React.Component {
     this.addOptionButtonTrigger = this.addOptionButtonTrigger.bind(this);
     this.removeAll = this.removeAll.bind(this);
   }
-  render() {
-   
+
+
+  render() { 
     return (
       <div>
         <form>
